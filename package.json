@@ -1,0 +1,13 @@
+{
+  "name": "DockerWordpress",
+  "version": "0.0.0",
+  "dependencies": {
+  },
+  "scripts": {
+    "docker:compose:up": "docker-compose -p Wordpress up --build --remove-orphans",
+    "docker:compose:down": "docker-compose -p Wordpress down --remove-orphans --rmi all",
+    "docker:compose:down.cache": "docker-compose -p Wordpress down --remove-orphans",
+    "docker:prune": "docker image prune -a -f"
+  },
+  "author": "Roman Cz"
+}
